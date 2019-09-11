@@ -6,14 +6,14 @@ import pandas as pd
 
 ########### Define your variables ######
 
-tabtitle = 'the district'
-myheading1 = 'Step Back! The doors are about to close!'
-myheading2 = 'Back2Good'
-image1 = 'dc-flag.jpg'
-image2 = 'metro-map.png'
-textbody = "Metro's recent on time performance ratings are so good, it's getting harder to find a good reason to take a car!"
+tabtitle = 'What DC Metro looks like'
+myheading1 = "I don't really like DC Metro though"
+myheading2 = 'This pic is little vague'
+image1 = 'favicon.ico'
+image2 = 'arr.jpeg'
+textbody = "I am trying to put very small text here"
 sourceurl = 'https://www.wmata.com/about/back2good/index.cfm'
-githublink = 'https://github.com/austinlasseter/dash-dc-layout'
+githublink = 'https://github.com/ayk-oishi/dash-dc-layout'
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -23,8 +23,8 @@ app.title=tabtitle
 
 ########### Set up the layout
 app.layout = html.Div(children=[
-    html.H1(myheading1),
-    html.H2(myheading2),
+    html.H2(myheading1),
+    html.H3(myheading2),
     html.Div([
         html.Div([
             html.Img(src=app.get_asset_url(image1), style={'width': '50%', 'height': 'auto'})
@@ -34,11 +34,11 @@ app.layout = html.Div(children=[
         ],className='three columns'),
         html.Div([
             html.Div(textbody, style={
-                'padding': '12px',
-                'font-size': '22px',
+                'padding': '22px',
+                'font-size': '11px',
                 'height': '120px',
                 'border': 'thin red solid',
-                'color': 'rgb(255, 255, 255)',
+                'color': 'rgb(155, 255, 355)',
                 'backgroundColor': 'rgb(57, 83, 107)',
                 'textAlign': 'right',
                 }),
